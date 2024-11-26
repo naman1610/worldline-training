@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.timetable th, .timetable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.timetable thead th {
+    background-color: #2e3192;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.timetable thead th:first-child {
+    background-color: #3f51b5;
+}
+
+.timetable tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.timetable td[colspan="5"], .timetable td[colspan="4"] {
+    font-weight: bold;
+}
+
+.timetable td:first-child, .timetable th:first-child {
+    border-right: 2px solid black;
+}
+
+.arrival { background-color: #ffffff; }
+.inquiry { background-color: #CEFFCF; }
+.outdoor { background-color: #C0EEFE; }
+.art { background-color: #ffe6f0; }
+.literacy { background-color: #FFFEC5; }
+.pe { background-color: #C0EEFE; }
+.math { background-color: #CE9AFF; }
+.skills { background-color: #FFFEC5; }
+
+.timetable td {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.timetable td:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .timetable {
+        font-size: 14px;
+    }
+
+    .timetable th, .timetable td {
+        padding: 8px;
+    }
+
+    .tooltip {
+        width: 150px;
+        margin-left: -75px;
+    }
+}
+
