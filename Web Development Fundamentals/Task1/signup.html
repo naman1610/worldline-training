@@ -3,113 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
     <title>Sign Up</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #4169E1;
-            padding: 1rem;
-        }
-
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: #333;
-            font-size: 1.5rem;
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-            position: relative;
-        }
-
-        input {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        input:focus {
-            outline: none;
-            border-color: #4169E1;
-        }
-
-        .btn {
-            width: 100%;
-            padding: 0.75rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-top: 1rem;
-        }
-
-        .btn-primary {
-            background-color: #0066CC;
-            color: white;
-        }
-
-        .btn-social {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            background-color: white;
-            border: 1px solid #ddd;
-            color: #333;
-            margin-top: 0.5rem;
-        }
-
-        .btn-facebook {
-            background-color: #4267B2;
-            color: white;
-        }
-
-        .divider {
-            text-align: center;
-            margin: 1rem 0;
-            color: #666;
-        }
-
-        .login-link {
-            text-align: center;
-            margin-top: 1rem;
-            font-size: 0.875rem;
-            color: #666;
-        }
-
-        .login-link a {
-            color: #4169E1;
-            text-decoration: none;
-        }
-
-        .password-requirements {
-            font-size: 0.75rem;
-            color: #666;
-            margin-top: 0.25rem;
-        }
-    </style>
 </head>
 <body>
     <div class="card">
@@ -137,16 +32,18 @@
         </form>
         
         <div class="login-link">
-            Already have an account? <a href="login.html">Login</a>
+            Already have an account? <a href="./login.html">Login</a>
         </div>
         
         <div class="divider">Or</div>
         
         <button class="btn btn-social btn-facebook">
-            Login with Facebook
+            <img src="./facebook_logo.svg" alt="Facebook Logo" width="20" height="20">
+            Signup with Facebook
         </button>
         <button class="btn btn-social">
-            Login with Google
+            <img src="./google_logo.svg" alt="Google Logo" width="20" height="20">
+            Signup with Google
         </button>
     </div>
 </body>
