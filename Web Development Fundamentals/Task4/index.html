@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form id="registrationForm" novalidate>
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+            <div class="error-message" id="fullNameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+            <div class="validation-message" id="emailValidation"></div>
+            <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <div class="password-strength" id="passwordStrength"></div>
+            <div class="error-message" id="passwordError"></div>
+            <div class="tooltip" id="passwordTooltip">
+                Password must contain at least 8 characters, one uppercase letter,
+                one lowercase letter, one number, and one special character
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+            <div class="error-message" id="phoneError"></div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+        <div class="tooltip" id="submitTooltip">Please fill out all fields correctly</div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
