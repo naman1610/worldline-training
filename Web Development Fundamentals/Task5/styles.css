@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.strength-meter {
+    height: 10px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+.strength-meter div {
+    height: 100%;
+    width: 0;
+    transition: width 0.5s;
+}
+.weak { background-color: #ff4444; }
+.moderate { background-color: #ffbb33; }
+.strong { background-color: #00C851; }
+.requirements {
+    font-size: 0.9em;
+    color: #666;
+}
+.requirement {
+    margin: 5px 0;
+}
+.met {
+    color: #00C851;
+}
+.error {
+    color: #ff4444;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
